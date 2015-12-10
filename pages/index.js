@@ -17,13 +17,21 @@ export default class extends Component {
 
   render() {
     return (
-      <div>
-        <h1>Home Page</h1>
-        <textarea ref='sourceSVG' defaultValue={defaultValue}></textarea>
-        <button onClick={this.processSVG.bind(this)}>Go</button>
-        <pre>
-          {this.state.jsx}
-        </pre>
+      <div className='container'>
+        <h1>SVG to JSX Online Converter</h1>
+
+        <textarea ref='sourceSVG' className='sm-col-12 border' style={{ minHeight: 200, fontFamily: 'monospace' }} defaultValue={defaultValue}></textarea>
+        <div className='clearfix mt1 mb2'>
+          <button onClick={this.processSVG.bind(this)} className='btn btn-primary right'>
+            Create JSX
+          </button>
+        </div>
+        <div>
+          <pre className='border'>
+            {this.state.jsx}
+          </pre>
+        </div>
+        <p>This uses the brilliant <a href='https://www.npmjs.com/package/svg-to-jsx' target='_black'>svg-to-jsx</a> package.</p>
       </div>
     );
   }
