@@ -5,6 +5,9 @@
  */
 
 import React, { Component } from 'react';
+import svgtojsx from 'svg-to-jsx'
+
+const defaultValue = '<svg version="1.1"><path id="myPath" style="font-family: Verdana; margin-bottom: 10px; -webkit-transition: all; ms-transition: all;"/></svg>'
 
 export default class extends Component {
 
@@ -12,13 +15,15 @@ export default class extends Component {
     return (
       <div>
         <h1>Home Page</h1>
-        <textarea ref='sourceSVG'></textarea>
+        <textarea ref='sourceSVG' defaultValue={defaultValue}></textarea>
         <button onClick={this.processSVG.bind(this)}>Go</button>
       </div>
     );
   }
 
   processSVG () {
-    console.log(this.refs.sourceSVG.value)
+    const sourceSVG = this.refs.sourceSVG.value
+    svgtojsx(this.refs.sourceSVG.value)
+      .then((jsx) => console.log(jsx))
   }
 }
