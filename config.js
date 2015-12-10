@@ -5,7 +5,7 @@
  */
 
 export default {
-  title: 'SVG to JSX Online Converted',
+  title: 'SVG to JSX Online Converter',
   description: 'Convert standard SVG files to JSX format for use in React projects',
   googleAnalyticsId: 'UA-XXXXX-X',
 };
