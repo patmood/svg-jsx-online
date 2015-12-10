@@ -12,10 +12,10 @@ function Html({ title, description, body, debug }) {
   return (
     <html className="no-js" lang="">
       <head>
+        <base href="http://www.patmoody.com/svg-jsx-online/" />
         <meta charSet="utf-8" />
         <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
         <title>{title || config.title}</title>
-        <base href="http://www.patmoody.com/svg-jsx-online/" />
         <meta name="description" content={description || config.description} />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="apple-touch-icon" href="apple-touch-icon.png" />
