@@ -12,7 +12,6 @@ function Html({ title, description, body, debug }) {
   return (
     <html className="no-js" lang="">
       <head>
-        <base href="http://patmood.github.io/svg-jsx-online" />
         <meta charSet="utf-8" />
         <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
         <title>{title || config.title}</title>
