@@ -5,7 +5,7 @@
  */
 
 export default {
-  title: 'React Static Boilerplate',
-  description: 'Static website generator for React.js web applications.',
+  title: 'SVG to JSX Online Converted',
+  description: 'Convert standard SVG files to JSX format for use in React projects',
   googleAnalyticsId: 'UA-XXXXX-X',
 };
