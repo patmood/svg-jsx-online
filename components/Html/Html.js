@@ -19,8 +19,8 @@ function Html({ title, description, body, debug }) {
         <meta name="description" content={description || config.description} />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="apple-touch-icon" href="apple-touch-icon.png" />
-        <link rel="stylesheet" href="/basscss.min.css" />
-        <script src={'/app.js?' + new Date().getTime()} />
+        <link rel="stylesheet" href="http://www.patmoody.com/svg-jsx-online/basscss.min.css" />
+        <script src={'http://www.patmoody.com/svg-jsx-online/app.js?' + new Date().getTime()} />
       </head>
       <body>
         <div id="app" dangerouslySetInnerHTML={{ __html: body }} />
