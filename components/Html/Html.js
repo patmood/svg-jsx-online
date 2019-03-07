@@ -4,9 +4,9 @@
  * Copyright (c) Konstantin Tarkus (@koistya) | MIT license
  */
 
-import React, { PropTypes } from 'react';
-import GoogleAnalytics from '../GoogleAnalytics';
-import config from '../../config';
+import React, { PropTypes } from 'react'
+import GoogleAnalytics from '../GoogleAnalytics'
+import config from '../../config'
 
 function Html({ title, description, body, debug }) {
   return (
@@ -18,14 +18,14 @@ function Html({ title, description, body, debug }) {
         <meta name="description" content={description || config.description} />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="apple-touch-icon" href="apple-touch-icon.png" />
-        <link rel="stylesheet" href="/basscss.min.css" />
-        <script src={'/app.js?' + new Date().getTime()} />
+        <link rel="stylesheet" href="basscss.min.css" />
+        <script src={'app.js?' + new Date().getTime()} />
       </head>
       <body>
         <div id="app" dangerouslySetInnerHTML={{ __html: body }} />
       </body>
     </html>
-  );
+  )
 }
 
 Html.propTypes = {
@@ -33,6 +33,6 @@ Html.propTypes = {
   description: PropTypes.string,
   body: PropTypes.string.isRequired,
   debug: PropTypes.bool.isRequired,
-};
+}
 
-export default Html;
+export default Html
