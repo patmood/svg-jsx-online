@@ -2,7 +2,7 @@
 
 Convert standard SVG files to JSX format for use in React projects
 
-# http://svg-jsx.patmoody.com/
+# http://patmood.github.io/svg-jsx-online/
 
 ## Credit
 
